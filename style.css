@@ -11,6 +11,18 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-size: 2em;
+  color: #f38ba8;
+  margin-bottom: 0.3em;
+}
+
+.tagline {
+  font-style: italic;
+  color: #cba6f7;
+  margin-bottom: 1.5em;
+}
+
 textarea {
   width: 100%;
   height: 120px;
@@ -20,6 +32,7 @@ textarea {
   padding: 1em;
   margin-top: 1em;
   font-size: 1em;
+  border-radius: 8px;
 }
 
 button {
@@ -30,7 +43,18 @@ button {
   margin-top: 1em;
   cursor: pointer;
   font-size: 1em;
-  border-radius: 5px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #fa6a90;
+}
+
+#token-count {
+  margin-top: 1em;
+  font-weight: bold;
+  color: #a6e3a1;
 }
 
 #echo-log {
@@ -38,9 +62,33 @@ button {
   text-align: left;
 }
 
+#echo-log h2,
+#leaderboard h2 {
+  font-size: 1.2em;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+  margin-top: 2em;
+}
+
+#echo-list,
+#leaderboard-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+
+#echo-list li,
+#leaderboard-list li {
+  background: #1f1f1f;
+  padding: 0.8em;
+  margin-bottom: 0.6em;
+  border-radius: 5px;
+  font-style: italic;
+  color: #f2cdcd;
+}
+
 footer {
   margin-top: 3em;
   font-size: 0.8em;
   color: #888;
 }
-
