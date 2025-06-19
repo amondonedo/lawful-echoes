@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy ⟁ Tokens</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Get More ⟁</h1>
+    <p>Support the ecosystem. Unlock deeper rituals.</p>
+
+    <!-- Stripe Buttons -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+    <stripe-buy-button
+      buy-button-id="YOUR_STRIPE_BUTTON_ID"
+      publishable-key="YOUR_PUBLISHABLE_KEY">
+    </stripe-buy-button>
+
+    <footer>
+      <p>All purchases are donations to the narrative ritual. Thank you.</p>
+    </footer>
+  </div>
+</body>
+</html>
