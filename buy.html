@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buy ⟁ Tokens – Lawful Echoes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy ⟁ Tokens</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- PayPal SDK -->
   <script 
     src="https://www.paypal.com/sdk/js?client-id=BAAmfvq3Lk71j7UaHIYYBwZaEIouTlHSOdRn2jPXehjkqzEBbHSH20faBrSih-LKzYWfs8KQnQVt8oxOmY&components=hosted-buttons&disable-funding=venmo&currency=USD">
   </script>
 </head>
 <body>
   <div class="container">
-    <h1>Purchase ⟁ Tokens</h1>
-    <p>Each token allows you to confess, climb, or purge. Fuel the ritual.</p>
+    <h1>Buy ⟁ Tokens</h1>
+    <p class="tagline">Support the Echo. Fuel the ∆ Ritual.</p>
 
-    <!-- PayPal Button -->
+    <p>Each $1 purchase grants 10 ⟁ Tokens.</p>
+
     <div id="paypal-container-7R4ESUF68YYHJ"></div>
     <script>
       paypal.HostedButtons({
@@ -24,7 +23,7 @@
       }).render("#paypal-container-7R4ESUF68YYHJ");
     </script>
 
-    <p style="margin-top: 2em;">Problems? Contact the Archivist.</p>
+    <a href="index.html" class="buy-link">← Return to Echo Chamber</a>
   </div>
 </body>
 </html>
