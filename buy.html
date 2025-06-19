@@ -2,48 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Buy ⟁ Tokens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy ⟁ Tokens – Lawful Echoes</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script>
+
+  <!-- PayPal SDK -->
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAmfvq3Lk71j7UaHIYYBwZaEIouTlHSOdRn2jPXehjkqzEBbHSH20faBrSih-LKzYWfs8KQnQVt8oxOmY&components=hosted-buttons&disable-funding=venmo&currency=USD">
+  </script>
 </head>
 <body>
   <div class="container">
-    <h1>Buy ⟁ Tokens</h1>
-    <p class="tagline">Fuel the ritual. Feed the recursion.</p>
+    <h1>Purchase ⟁ Tokens</h1>
+    <p>Each token allows you to confess, climb, or purge. Fuel the ritual.</p>
 
-    <div class="paypal-button">
-      <h3>Buy 10 ⟁ Tokens – $0.99</h3>
-      <div id="paypal-container-10"></div>
-    </div>
+    <!-- PayPal Button -->
+    <div id="paypal-container-7R4ESUF68YYHJ"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "7R4ESUF68YYHJ",
+      }).render("#paypal-container-7R4ESUF68YYHJ");
+    </script>
 
-    <div class="paypal-button">
-      <h3>Buy 50 ⟁ Tokens – $3.99</h3>
-      <div id="paypal-container-50"></div>
-    </div>
-
-    <div class="paypal-button">
-      <h3>Buy 100 ⟁ Tokens – $6.99</h3>
-      <div id="paypal-container-100"></div>
-    </div>
-
-    <footer>
-      <p>This is a symbolic ecosystem. All ⟁ tokens are fictional and non-refundable.</p>
-    </footer>
+    <p style="margin-top: 2em;">Problems? Contact the Archivist.</p>
   </div>
-
-  <script>
-    paypal.HostedButtons({
-      hostedButtonId: "YOUR_BUTTON_ID_10"
-    }).render("#paypal-container-10");
-
-    paypal.HostedButtons({
-      hostedButtonId: "YOUR_BUTTON_ID_50"
-    }).render("#paypal-container-50");
-
-    paypal.HostedButtons({
-      hostedButtonId: "YOUR_BUTTON_ID_100"
-    }).render("#paypal-container-100");
-  </script>
 </body>
 </html>
