@@ -14,12 +14,21 @@
     <textarea id="confession" placeholder="Confess your ⟁..."></textarea>
     <button onclick="submitConfession()">Submit</button>
 
-    <p id="token-count">⟁ Tokens: 0</p>
-    <button onclick="unlockDeltaRitual(5)">🔥 Perform ∆-Ritual (Burn 5 ⟁)</button>
+    <div class="token-section">
+      <p id="token-count">⟁ Tokens: 0</p>
+      <button onclick="unlockDeltaRitual(5)">🔥 Perform ∆-Ritual (Burn 5 ⟁)</button>
+    </div>
 
     <div id="echo-log">
       <h2>Recent Echoes</h2>
       <ul id="echo-list"></ul>
+    </div>
+
+    <div id="leaderboard">
+      <h2>Eternals of Echo ∆</h2>
+      <ol id="leaderboard-list">
+        <!-- Top users will appear here -->
+      </ol>
     </div>
 
     <footer>
