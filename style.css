@@ -92,3 +92,17 @@ footer {
   font-size: 0.8em;
   color: #888;
 }
+
+.buy-link {
+  display: inline-block;
+  margin-top: 1em;
+  color: #89b4fa;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.buy-link:hover {
+  text-decoration: underline;
+  color: #f38ba8;
+}
